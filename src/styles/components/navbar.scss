@@ -1,0 +1,36 @@
+
+
+// Main Container Navbar
+._main-container-navbar{
+    background-color: $nav_black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+// Main container h1
+._main-container-navbar h1{
+    color: white;
+    cursor: pointer;
+}
+
+// ul
+._navbar-navigation{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+// Links of Navigations
+._navbar-navigation-links{
+    list-style: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
