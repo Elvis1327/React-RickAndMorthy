@@ -2,20 +2,18 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { getRandomCharacters } from '../utils/data';
  
 interface  rickApi {
-    results: any[]
+    rickApiData: any[]
 };
-
 const initialState: rickApi = {
-    results: []
+    rickApiData: []
 }
 
 // Getting the data from the RestApi
 export const getRickData = createAsyncThunk(
-    'rickApi/getRickData',
+    'RickApi/GetAllUsers',
     async () => {
-        const response = await getRandomCharacters();
-        console.log(response)
-        return response;
+        const rickData = await getRandomCharacters();
+        return rickData;
     }
 )
 
@@ -25,7 +23,7 @@ const rickSlide = createSlice({
     reducers: {},
     extraReducers: (builder) => {
         builder.addCase(getRickData.fulfilled, ( state, action ) => {
-            state.results.push(action.payload);
+            state.rickApiData = action.payload;
         });
     }
 });

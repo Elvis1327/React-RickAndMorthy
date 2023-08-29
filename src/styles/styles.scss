@@ -1,6 +1,8 @@
 
 // Variables
 $nav_black: #2B3035;
+$rick_card: #3C3E43;
+$name_hover: #FF9800;
 
 
 
@@ -11,6 +13,8 @@ $nav_black: #2B3035;
 
 // Components
 @import './components/navbar.scss';
+@import './components/characters.scss';
+@import './components/characters-cards.scss';
 
 
 *{

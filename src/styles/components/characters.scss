@@ -1,0 +1,13 @@
+
+
+// Main container of the cards of the characters
+._characters-main-container{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+

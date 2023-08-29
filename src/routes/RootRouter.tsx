@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from '../shared/Navbar';
 import { SearchRick } from '../components/SearchRick';
-import { Users } from '../components/Users'
+import { Characters } from '../components/Characters'
 
 
 
@@ -11,7 +11,7 @@ export const RootRouter = () => {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path='/' element={<Users / >}  />
+                <Route path='/' element={<Characters / >}  />
                 <Route path='/search' element={<SearchRick / >}  />
             </Routes>
         </BrowserRouter>

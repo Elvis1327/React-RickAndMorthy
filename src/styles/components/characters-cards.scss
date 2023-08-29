@@ -1,0 +1,36 @@
+
+// Card Container
+.character-card{
+    width: 600px;
+    height: 220px;
+    background-color: $rick_card;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+}
+
+// Card Image 
+.character-card-img img{
+    height: 220px;
+}
+
+// Card info Container
+.character-card-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    color: white;
+}
+
+// Card info container h1
+.character-card-info-first-h1{
+    transition: all 300ms;
+}
+
+.character-card-info-first-h1:hover{
+    color: $name_hover;
+    cursor: pointer;
+}
+
+
