@@ -3,6 +3,7 @@
 $nav_black: #2B3035;
 $rick_card: #3C3E43;
 $name_hover: #FF9800;
+$navbar_navigation: #42A5F5;
 
 
 
@@ -15,6 +16,7 @@ $name_hover: #FF9800;
 @import './components/navbar.scss';
 @import './components/characters.scss';
 @import './components/characters-cards.scss';
+@import './components/search-cards.scss';
 
 
 *{

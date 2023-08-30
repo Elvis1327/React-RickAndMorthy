@@ -31,6 +31,11 @@
     font-weight: bold;
     font-size: 1.5rem;
     text-decoration: none;
+    transition: all 300ms;
+}
+
+._navbar-navigation-links:hover{
+    color: #42A5F5;
 }
 
 

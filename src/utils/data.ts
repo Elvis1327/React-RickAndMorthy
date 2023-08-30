@@ -21,4 +21,13 @@ export const getRandomCharacters = async ()  => {
     return data.results;
 };
 
+// Get data by Input text
+export const getInputCharacter = (str:any, characters:any[]) => {   
+    if (str.length === 0){  
+        return characters;
+    }else{
+        return characters.filter((e) => e.name.toLowerCase().includes(str));
+    };
+};
+
 
