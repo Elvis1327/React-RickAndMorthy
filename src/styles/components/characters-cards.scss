@@ -2,6 +2,7 @@
 // Card Container
 .character-card{
     width: 600px;
+    // max-width: 100%;
     height: 220px;
     background-color: $rick_card;
     border-radius: 15px;
@@ -12,25 +13,89 @@
 // Card Image 
 .character-card-img img{
     height: 220px;
+    max-width: 100%;
 }
 
 // Card info Container
 .character-card-info{
-    padding: 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 15px;
     color: white;
 }
 
 // Card info container h1
 .character-card-info-first-h1{
     transition: all 300ms;
+    font-size: 25px;
 }
 
 .character-card-info-first-h1:hover{
     color: $name_hover;
     cursor: pointer;
+}
+
+// Card info container --STATUS--
+// STATUS ALIVE
+.character-card-info-first-status-status-alive{
+    position: relative;
+    left: 10px;
+}
+.character-card-info-first-status-status-alive::before{
+    content: "";
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #55CC44;
+    left: -13px;
+    top: 5px;
+}
+// STATUS DEAD
+.character-card-info-first-status-status-dead{
+    position: relative;
+    left: 10px;
+}
+.character-card-info-first-status-status-dead::before{
+    content: "";
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #D63D2E;
+    left: -13px;
+    top: 5px;
+}
+
+// Card info Container second span
+.character-card-info-location-question{
+    color: gray;
+    font-weight: bold;
+}
+// Card info container second answer
+.character-card-info-second-location-answer{
+ transition: all 300ms;
+}
+.character-card-info-second-location-answer:hover{
+    cursor: pointer;
+    color: $name_hover;
+}
+
+
+// Card info Container third span
+.character-card-info-thrid-species-question{
+    color: gray;
+    font-weight: bold;
+}
+
+// Card info container third answer
+.character-card-info-thrid-species-answer{
+    transition: all 300ms;
+}
+.character-card-info-thrid-species-answer:hover{
+    cursor: pointer;
+    color: $name_hover;
 }
 
 

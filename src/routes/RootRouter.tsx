@@ -9,7 +9,7 @@ import { Characters } from '../components/Characters'
 export const RootRouter = () => {
     return(
         <BrowserRouter>
-            <Navbar />
+        <Navbar />
             <Routes>
                 <Route path='/' element={<Characters / >}  />
                 <Route path='/search' element={<SearchRick / >}  />

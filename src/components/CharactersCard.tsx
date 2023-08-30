@@ -15,7 +15,16 @@ export const CharactersCard = (character: CharacterApi) => {
 
                 <div className="character-card-info-first">
                     <h1 className='character-card-info-first-h1'>{character.name}</h1>
-                    <span className="character-card-info-first-status">{character.status} - {character.gender} </span>
+                    <span 
+                        className={character.status === 'Alive' ? 
+                            'character-card-info-first-status-status-alive'
+                            : character.status === 'Dead' ?
+                            'character-card-info-first-status-status-dead'
+                            :
+                            'character-card-info-first-status'
+                            }>
+                        {character.status} - {character.gender} 
+                    </span>
                 </div>
 
                 <div className="character-card-info-second">

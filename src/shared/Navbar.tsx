@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { NavbarResponsive } from './NavbarResponsive';
 
 
 export const Navbar = () => {
     return (
         <>
         {/* Navbar Container */}
+        <NavbarResponsive />
         <div className="_main-container-navbar">
             <h1>
                 RickApp

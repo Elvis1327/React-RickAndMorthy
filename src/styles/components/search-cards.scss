@@ -1,0 +1,44 @@
+
+// Main Container
+.search-rick-main-container{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+// Input 
+.search-rick-input{
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.509);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.search-rick-input:focus{
+    border: 1px solid rgba(128, 128, 128, 0.393);
+}
+
+.search-rick-container-cards{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+// Not Found Character
+
+.search-rick-no-data{
+    padding: 25px;
+    background-color: rgba(255, 0, 0, 0.34);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+
+
