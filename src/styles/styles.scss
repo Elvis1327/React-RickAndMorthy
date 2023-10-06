@@ -6,10 +6,10 @@ $name_hover: #FF9800;
 $navbar_navigation: #42A5F5;
 
 
-
-// Fonts
 // Roboto Font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+// Poppins Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;700&display=swap');
 
 
 // Components
@@ -17,7 +17,7 @@ $navbar_navigation: #42A5F5;
 @import './components/characters.scss';
 @import './components/characters-cards.scss';
 @import './components/search-cards.scss';
-
+@import './components/navbarResponsive.scss';
 
 *{
     margin: 0px;

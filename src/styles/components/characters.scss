@@ -10,4 +10,10 @@
     justify-content: center;
 }
 
+@media (max-width: 700px){
+    ._characters-main-container{
+        padding: 100px 20px;
+    }
+}
+
 

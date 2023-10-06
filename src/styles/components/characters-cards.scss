@@ -2,7 +2,7 @@
 // Card Container
 .character-card{
     width: 600px;
-    // max-width: 100%;
+    max-width: 100%;
     height: 220px;
     background-color: $rick_card;
     border-radius: 15px;
@@ -23,6 +23,7 @@
     flex-direction: column;
     row-gap: 15px;
     color: white;
+    max-width: 100%;
 }
 
 // Card info container h1
@@ -98,4 +99,77 @@
     color: $name_hover;
 }
 
+
+@media (max-width: 700px){
+    .character-card{
+        width: 100%;
+        height: 170px;
+    }
+
+    // Card Image 
+    .character-card-img img{
+        width: 150px;
+        height: 170px;
+        max-width: 100%;
+    }
+
+    // Info first h1
+    .character-card-info-first-h1{
+        font-size: 14px;
+    }
+
+    // Info character status
+    .character-card-info-first-status,
+    .character-card-info-first-status-status-dead,
+    .character-card-info-first-status-status-alive{
+        font-size: 12px;
+    }
+
+    // Info second question
+    .character-card-info-location-question{
+        font-size: 14px;
+    }
+    // Second answer
+    .character-card-info-second-location-answer{
+        font-size: 12px;
+    }
+
+    // Info third question
+    .character-card-info-thrid-species-question{
+        font-size: 15px;
+    }
+    // Info thrid answer
+    .character-card-info-thrid-species-answer{
+        font-size: 12px;
+    }
+
+    // Info card container
+    .character-card-info{
+        row-gap: 10px;
+    }
+
+    // Status dead
+    .character-card-info-first-status-status-dead::before{
+        content: "";
+        height: 10px;
+        position: absolute;
+        width: 10px;
+        border-radius: 100%;
+        background-color: #D63D2E;
+        left: -13px;
+        top: 2px;
+    }
+    // Status alive
+    .character-card-info-first-status-status-alive::before{
+        content: "";
+        height: 10px;
+        position: absolute;
+        width: 10px;
+        border-radius: 100%;
+        background-color: #55CC44;
+        left: -13px;
+        top: 2px;
+    }
+
+}
 
