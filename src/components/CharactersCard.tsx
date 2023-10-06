@@ -5,13 +5,13 @@ import { CharacterApi } from '../interfaces/rickRestApi';
 export const CharactersCard = (character: CharacterApi) => {
 
     return (
-        <div className="character-card">
+        <section className="character-card">
             {/* Image */}
             <div className="character-card-img">
                 <img src={character.image} alt="image" />
             </div>
             {/* Card Info */}
-            <div className="character-card-info">
+            <article className="character-card-info">
 
                 <div className="character-card-info-first">
                     <h1 className='character-card-info-first-h1'>{character.name}</h1>
@@ -41,8 +41,8 @@ export const CharactersCard = (character: CharacterApi) => {
                     </h3>
                 </div>
 
-            </div>
-        </div>
+            </article>
+        </section>
     )
 
 }

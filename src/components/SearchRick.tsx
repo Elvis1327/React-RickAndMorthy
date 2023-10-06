@@ -18,12 +18,9 @@ export const SearchRick = () => {
 
     const { rickApiData } = useSelector((state: any) => state.rickApi);
 
-
-
     const [ inputData, setInputData ] = useState('');
 
     const data = getInputCharacter(inputData, rickApiData);
-    console.log(data)
 
     return(
         <div className="search-rick-main-container">
